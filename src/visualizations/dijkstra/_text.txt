@@ -1,0 +1,5 @@
+Dijkstra's algorithm is a searching algorithm that is used to find the shortest
+path between an initial and a final node in a graph. This algorithm makes no 
+attempt of direct "exploration" towards the destination. It rather expands outward 
+from the starting point, interactively considering every node that is closer in 
+terms of shortest path distance until it reaches the destination.

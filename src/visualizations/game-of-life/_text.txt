@@ -1,0 +1,8 @@
+Convway's game of life is a zero-player game where you observe simulation 
+of the two-dimensional grid of cells with two possibl states (alive or dead).
+The first generation of the cells is given by the initial pattern. After that
+new generation is created with each game tick. There are multiple rules for the 
+creation of the new generation base on cell interaction. Some of them might die, 
+some of them live on and some of them become alive.
+There are multiple initial patterns provided. You can switch between them by
+clicking on the visualization.

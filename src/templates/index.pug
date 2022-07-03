@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    div(class="row row-cols-1 row-cols-md-3 row-cols-lg-5 gy-4")
+       each visualization in visualizations
+            div(class="col")
+                a(href=htmlWebpackPlugin.options.publicPath + "/" + visualization.id)
+                    div(class="card")
+                        img(
+                            src=require("../visualizations/" + visualization.id + "/_image.png").default
+                            class="card-img-top")
+                        div(class="card-body")
+                            p(class="card-title fw-semibold")=visualization.name

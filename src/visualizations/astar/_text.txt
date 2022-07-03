@@ -1,0 +1,4 @@
+A* is a searching algorithm that is used to find the shortest path between 
+an initial and a final node in a graph. It uses problem specific heuristic
+function that estimates the cost from the current node to the final node. 
+In this example Manhattan distance is used as the heuristic function. 

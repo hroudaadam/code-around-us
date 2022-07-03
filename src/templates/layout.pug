@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title=htmlWebpackPlugin.options.title
+        link(
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+            crossorigin="anonymous"
+        )
+        script(src=htmlWebpackPlugin.options.publicPath + "/index.js") 
+        block headScripts
+    body
+        nav(
+            class="navbar navbar-expand-md navbar-light bg-white border-bottom d-flex justify-content-center"
+        )
+            a(
+                class="navbar-brand fw-semibold fs-3"
+                href=htmlWebpackPlugin.options.publicPath
+            )="Code around us "
+        
+        div(
+            class="container my-3 pb-5"
+        )
+            block content
+
+
+        div(
+            class="navbar fixed-bottom navbar-light bg-white border-top"
+        )
+            div(
+                class="w-100 d-flex justify-content-center"
+            )
+                p(
+                    class="m-0 lead fs-6"
+                )
+                    | © 2022 
+                    a(href="https://github.com/hroudaadam") Adam Hrouda
+
+
+        script(
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+            crossorigin="anonymous"
+        )
